@@ -1,12 +1,12 @@
 # practice-rdf-ruby
 
-Rerequisites:
+Pre-requisites:
 - Ruby 3.1.2
 
 To run locally:
-- Clone repo
-- optional: if using rvm (Ruby Version Manager) ` cd ../practice-rdf-ruby/` to create gemset
-- install bundler `gem install bundler`
-- `bundle install` to install gems in Gemfile needed for this project and create a Gemfile.lock
-- run demo using `ruby demo.rb`
+1. Clone repo `git clone https://github.com/culturecreates/practice-rdf-ruby.git`
+1. `cd practice-rdf-ruby`
+1. `gem install bundler` to install bundler if not already installed
+1. `bundle install` to install gems in Gemfile needed for this project
+1. `ruby demo.rb` to run demo
 
