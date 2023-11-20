@@ -22,4 +22,4 @@ shacl = SHACL.open('./shacl/cms-shacl.ttl')
 graph = RDF::Graph.load('./output/25-events-framed.jsonld')
 report = shacl.execute(graph)  
 puts "Conforms: #{report.conform?}"
-File.write('./output/25-events-report.text', report)
+File.write('./output/25-events-report.yml', report)
