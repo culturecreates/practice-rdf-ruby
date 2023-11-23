@@ -8,5 +8,6 @@ To run locally:
 1. `cd practice-rdf-ruby`
 1. `gem install bundler` to install bundler if not already installed
 1. `bundle install` to install gems in Gemfile needed for this project
-1. `ruby demo.rb` to run demo
+1. `cd src`
+1. `ruby seo.rb` or `ruby artsdata.rb` to run a pipeline
 
