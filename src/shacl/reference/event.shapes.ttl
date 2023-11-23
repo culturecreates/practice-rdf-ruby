@@ -1,0 +1,141 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns:     <http://kg.footlight.io/> .
+@prefix schema: <http://schema.org/>.
+
+ns:EventShape a sh:NodeShape;
+   sh:targetClass schema:Event ;
+   sh:nodeKind sh:IRI ;
+   sh:property ns:HasName ;
+   sh:property ns:HasDescription ;
+   sh:or (ns:HasStartDate ns:HasStartDateTime);
+   sh:property ns:HasEndDate;
+   sh:property ns:HasEndDateTime;
+   sh:property ns:HasOrganizer;
+   sh:property ns:HasPerformer;
+   .
+
+ns:PersonShape a sh:NodeShape;
+   sh:targetClass schema:Organization ;
+   sh:nodeKind sh:IRI ;
+   sh:property ns:HasName ;
+   sh:property ns:HasUrl .
+
+ns:OrganizationShape a sh:NodeShape;
+   sh:targetClass schema:Organization ;
+   sh:nodeKind sh:IRI ;
+   sh:property ns:HasName ;
+   sh:property ns:HasUrl
+   .
+
+ns:PlaceShape a sh:NodeShape;
+   sh:targetClass schema:Place ;
+   sh:nodeKind sh:IRI ;
+   sh:property ns:HasName ;
+   sh:property ns:HasAddress ;
+   .
+
+ns:AddressShape a sh:NodeShape;
+   sh:targetClass schema:PostalAddress ;
+   sh:nodeKind sh:IRI ;
+   sh:property ns:HasStreetAddress ;
+   sh:property ns:HasPostalCode ;
+   sh:property ns:HasAddressRegion ;
+   sh:property ns:HasAddressLocality ;
+   sh:property ns:HasAddressCountry ;
+   sh:property ns:HasOrganizer ;
+   sh:property ns:HasPerformer ;
+   .
+
+ns:HasName sh:path schema:name;
+   sh:minCount 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:name validation failed"@en .
+
+ns:HasDescription sh:path schema:description;
+   sh:dataType rdf:langString;
+   sh:minLength 2;
+   sh:resultMessage "schema:description validation failed"@en .
+
+ns:HasAddress sh:path schema:address;
+   sh:minCount 1;
+   sh:maxCount 1;
+   sh:nodeKind sh:IRI;
+   sh:class schema:PostalAddress;
+   sh:resultMessage "schema:address validation failed"@en .
+
+ns:HasStreetAddress sh:path schema:streetAddress;
+   sh:minCount 1;
+   sh:minLength 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:streetAddress validation failed"@en .
+
+ns:HasPostalCode sh:path schema:postalCode;
+   sh:minCount 1;
+   sh:minLength 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:postalCode validation failed"@en .
+
+ns:HasAddressRegion sh:path schema:addressRegion;
+   sh:minCount 1;
+   sh:minLength 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:addressRegion validation failed"@en .
+
+ns:HasAddressLocality sh:path schema:addressLocality;
+   sh:minCount 1;
+   sh:minLength 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:addressLocality validation failed"@en .
+
+ns:HasAddressCountry sh:path schema:addressCountry;
+   sh:minCount 1;
+   sh:minLength 1;
+   sh:dataType rdf:langString;
+   sh:resultMessage "schema:addressCountry validation failed"@en .
+
+ns:HasUrl sh:path schema:url;
+#   Currently its a string
+#   sh:nodeKind sh:IRI ;
+#  There are orgs with no URL
+#  sh:minCount 1;
+   sh:resultMessage "schema:url validation failed"@en .
+
+ns:HasSameAs sh:path schema:sameAs;
+#   Currently its a string
+#   sh:nodeKind sh:IRI ;
+   sh:resultMessage "schema:sameAs validation failed"@en .
+
+ns:HasStartDate sh:path schema:startDate;
+   sh:minCount 1;
+   sh:dataType xsd:Date;
+   sh:resultMessage "schema:endDate validation failed"@en .
+
+ns:HasStartDateTime sh:path schema:startDateTime;
+   sh:minCount 1;
+   sh:dataType xsd:DateTime;
+   sh:resultMessage "schema:endDateTime validation failed"@en .
+
+ns:HasEndDate sh:path schema:endDate;
+   sh:minCount 0;
+   sh:dataType xsd:Date;
+   sh:resultMessage "schema:endDate validation failed"@en .
+
+ns:HasEndDateTime sh:path schema:endDateTime;
+   sh:minCount 0;
+   sh:dataType xsd:DateTime;
+   sh:resultMessage "schema:endDateTime validation failed"@en .
+
+ns:HasOrganizer sh:path schema:organizer;
+   sh:minCount 0;
+   sh:nodeKind sh:IRI;
+   sh:class schema:Organization;
+   sh:resultMessage "schema:organizer validation failed"@en .
+
+ns:HasPerformer sh:path schema:performer;
+   sh:minCount 0;
+   sh:nodeKind sh:IRI;
+   sh:class schema:Organization;
+   sh:resultMessage "schema:performer validation failed"@en .

@@ -1,0 +1,243 @@
+{
+  "id": "64822025371b8f0064911cc4",
+  "slug": {
+    "en": "alicia-moffet",
+    "fr": "alicia-moffet"
+  },
+  "name": {
+    "en": "Alicia Moffet",
+    "fr": "Alicia Moffet"
+  },
+  "description": {
+    "en": "<p>Alicia Moffet is about to take the pop music world by storm. Born in Quebec City, the 24-year-old singer-songwriter is already a superstar in her homeland. With the release of her English-language debut album, Billie Ave. reaching an incredible 17 million listens, and her most recent EP, Intertwine, already boasting over 15 million listens, the rising star is now making a name for herself on the international scene. With her distinctive soulful voice and bubbly personality, Alicia exudes a disarmingly down-to-earth charm. As a songwriter, she has a natural talent for translating real-life experiences into heartfelt lyrics and catchy melodies. Alicia's musical universe marries the power of pop with the rich, complex sounds of R&amp;B and soul. From danceable pop anthems like Certified or Lullaby, to poignant ballads like Beautiful Scar: the singer brings her powerful voice to a variety of popular contemporary genres, approaching them all with the rare confidence of a fully-realized artist. Alicia is a star you'll want to keep on your musical radar. Please note that the artist may invite audience members to stand during the show. We prefer to warn you. Opening act: Pelch Pelch's voice is impressive, and leaves no one indifferent. A unique tone backed by a power that invites both parties into that vulnerable place where we risk everything for love, for certain heights and sometimes, loss. The track Yellow Shirt captured this yearning when it was released earlier this year, already accumulating over a million streams. Simple and haunting, the song was inspired by the loss - but more importantly, the life, of a close friend. Stunned, heartbroken, Pelch channeled these feelings, which instantly struck an introspective chord with the thousands of fans he'd never had the chance to meet, who took the message to heart.</p>",
+    "fr": "<p>Alicia Moffet est sur le point de prendre d'assaut le monde de la musique pop. Née à Québec, l'auteure-compositrice-interprète de 24 ans est déjà une superstar dans son pays. Avec la sortie de son premier album en anglais, Billie Ave. qui a atteint le nombre incroyable de 17 millions d'écoutes, et son plus récent EP, Intertwine, qui compte déjà plus de 15 millions d’écoutes, la star montante se fait maintenant un nom sur la scène internationale. Avec sa voix soul distincte et sa personnalité pétillante, Alicia dégage un charme désarmant et terre-à-terre. En tant qu'auteure-compositrice, elle a un talent naturel pour traduire ses expériences de vie réelle en paroles sincères et en mélodies accrocheuses. L'univers musical d'Alicia marie la puissance de la pop avec les sons riches et complexes du R&amp;B et de la soul. Des hymnes pop dansants comme le titre certifié or Lullaby, aux ballades poignantes comme Beautiful Scar: la chanteuse apporte sa voix puissante à une variété de genres contemporains populaires, les abordant tous avec la rare confiance d'une artiste pleinement réalisée. Alicia est une star que vous voudrez garder sur votre radar musical. Veuillez noter que l'artiste pourrait inviter les spectateurs à se lever pendant le spectacle. Nous préférons vous en avertir. Première partie : Pelch La voix de Pelch est impressionnante, et ne laisse personne indifférent. Un ton unique soutenu par une puissance qui invite les deux parties dans cet endroit vulnérable où nous risquons tout pour l’amour, pour certains sommets et parfois, la perte. Le titre Yellow Shirt a capturé cette aspiration lors de sa sortie plus tôt cette année, accumulant déjà plus d’un million de streams. Simple et obsédante, la chanson a été inspirée par la perte – mais surtout la vie, d’un ami proche. Abasourdi, le cœur brisé, Pelch a canalisé ces sentiments qui ont instantanément touché une corde sensible et introspective auprès des milliers de fans qu’il n’a jamais encore eu l'occasion de rencontrer et qui ont saisi le message à cœur.</p>"
+  },
+  "type": "Event",
+  "startDateTime": "2023-11-23T20:00:00-05:00",
+  "subEvent": [],
+  "inLanguage": [],
+  "eventStatus": "EventScheduled",
+  "eventAttendanceMode": "OfflineEventAttendanceMode",
+  "location": [
+    {
+      "id": "6420c6112831190064570c5c",
+      "name": {
+        "en": "Salle Odyssée",
+        "fr": "Salle Odyssée"
+      },
+      "description": {
+        "en": "<p><br></p>",
+        "fr": "<p><br></p>"
+      },
+      "accessibilityNote": {
+        "en": "Companion card for leisure activities",
+        "fr": "Carte d'accompagnement loisir  (https://www.maisondelaculture.ca/salle-odyssee/services/services-adaptes.html)"
+      },
+      "geo": {
+        "latitude": "45.4844444",
+        "longitude": "-75.6816667"
+      },
+      "openingHours": "https://www.maisondelaculture.ca/salle-odyssee/nous-joindre.html",
+      "additionalType": [
+        {
+          "id": "642c839fcf606a0064e5e956",
+          "name": {
+            "fr": "Salle de spectacle (Q112688641)",
+            "en": "Performance Hall (Q112688641)"
+          }
+        }
+      ],
+      "accessibility": [
+        {
+          "id": "642b2684cf606a0064e5d100",
+          "name": {
+            "fr": "Entrée de plain-pied",
+            "en": "Ground level entrance"
+          }
+        },
+        {
+          "id": "642b2684cf606a0064e5d107",
+          "name": {
+            "fr": "Places de stationnement réservées",
+            "en": "Reserved parking spaces"
+          }
+        },
+        {
+          "id": "642b3142cf606a0064e5d5c5",
+          "name": {
+            "fr": "Sièges réservés aux personnes à mobilité réduite",
+            "en": "Seats reserved for people with reduced mobility"
+          }
+        }
+      ],
+      "regions": [
+        {
+          "id": "63bc0b2d1c6b6c005aad524f",
+          "name": {
+            "fr": "Gatineau",
+            "en": "Gatineau"
+          }
+        }
+      ],
+      "address": {
+        "id": "64515ae5e19f7200646d07a7",
+        "addressCountry": {
+          "en": "CA",
+          "fr": "CA"
+        },
+        "addressLocality": {
+          "en": "Gatineau",
+          "fr": "Gatineau"
+        },
+        "addressRegion": {
+          "en": "QC",
+          "fr": "QC"
+        },
+        "postalCode": "J8T 8H9",
+        "streetAddress": {
+          "en": "855 Bd de la Gappe",
+          "fr": "855 Bd de la Gappe"
+        }
+      },
+      "containedInPlace": {},
+      "type": "Place",
+      "sameAs": [
+        "http://kg.artsdata.ca/resource/K2-197",
+        "http://www.wikidata.org/entity/Q107015498"
+      ],
+      "63b861af1c6b6c005aad47f9": [
+        {
+          "id": "63b861f21c6b6c005aad483b",
+          "name": {
+            "en": "Display on cultural places map",
+            "fr": "Afficher sur la carte de lieux culturels"
+          }
+        }
+      ],
+      "taxonomyMap": [
+        {
+          "id": "63b861af1c6b6c005aad47f9",
+          "name": {
+            "en": "Map of Cultural Places",
+            "fr": "Carte de lieux culturels"
+          }
+        }
+      ]
+    }
+  ],
+  "additionalType": [
+    {
+      "id": "6418c4b85e4d4e0066a2ecdb",
+      "name": {
+        "fr": "Chanson",
+        "en": "Chanson"
+      },
+      "parent": {
+        "id": "6418c27d5e4d4e0066a2e9fd",
+        "name": {
+          "fr": "Spectacle",
+          "en": "Performance"
+        }
+      }
+    }
+  ],
+  "image": {
+    "type": "ImageObject",
+    "width": 800,
+    "height": 560,
+    "original": "https://cdn.footlight.io/iiif/3/f008da6f-7c0f-4e81-9d98-21e60ea79ac1.jpg/full/max/0/default.jpg",
+    "thumbnail": "https://cdn.footlight.io/iiif/3/f008da6f-7c0f-4e81-9d98-21e60ea79ac1.jpg/50,0,700,560/600,/0/default.jpg",
+    "large": "https://cdn.footlight.io/iiif/3/f008da6f-7c0f-4e81-9d98-21e60ea79ac1.jpg/0,30,800,500/800,/0/default.jpg"
+  },
+  "organizer": [
+    {
+      "type": "Organization",
+      "id": "645bd8ef7db98f0065dd22f5",
+      "name": {
+        "en": "Maison de la culture de Gatineau",
+        "fr": "Maison de la culture de Gatineau"
+      },
+      "logo": {
+        "type": "ImageObject",
+        "width": 409,
+        "height": 410,
+        "original": "https://cdn.footlight.io/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/max/0/default.jpg",
+        "thumbnail": "https://cdn.footlight.io/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/409,/0/default.jpg",
+        "large": "https://cdn.footlight.io/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/409,/0/default.jpg"
+      },
+      "taxonomyMap": [
+        {
+          "id": "63d1676b016e830064fbafe1",
+          "name": {
+            "en": "Member of an organization",
+            "fr": "Membre d'organisme"
+          }
+        }
+      ],
+      "sameAs": [
+        "http://kg.artsdata.ca/resource/K16-67",
+        "http://scenepro.ca#Organization284"
+      ],
+      "url": "https://www.maisondelaculture.ca/",
+      "63d1676b016e830064fbafe1": [
+        {
+          "id": "63d167da016e830064fbb03b",
+          "name": {
+            "en": "Culture Outaouais",
+            "fr": "Culture Outaouais"
+          }
+        },
+        {
+          "id": "63d167da016e830064fbb03d",
+          "name": {
+            "en": "Tourisme Outaouais",
+            "fr": "Tourisme Outaouais"
+          }
+        }
+      ]
+    }
+  ],
+  "performer": [],
+  "supporter": [],
+  "offers": [
+    {
+      "name": null,
+      "additionalType": "PAID",
+      "url": "https://reseau.ovation.ca/pesite.asp?CodeRepresentation=0E03X4&CodeSiteClient=00000V",
+      "type": "AggregateOffer"
+    },
+    {
+      "name": null,
+      "price": 44,
+      "type": "Offer",
+      "priceCurrency": "CAD"
+    }
+  ],
+  "keywords": [],
+  "url": "https://www.maisondelaculture.ca/Salle-Odyssee/spectacles/chanson/alicia-moffet.html",
+  "audience": [
+    {
+      "id": "63a09b1a1c6b6c005aad2dba",
+      "name": {
+        "fr": "Grand public",
+        "en": "General public"
+      }
+    }
+  ],
+  "accessibility": [],
+  "region": {
+    "id": "63bc0b2d1c6b6c005aad524f",
+    "name": {
+      "fr": "Gatineau",
+      "en": "Gatineau"
+    }
+  },
+  "subEventDetails": {
+    "totalSubEventCount": 0,
+    "upcomingSubEventCount": 0
+  },
+  "sameAs": [
+    "http://kg.artsdata.ca/resource/K23-400",
+    "http://kg.footlight.io/resource/maisondelaculture-ca_chanson-alicia-moffet"
+  ]
+}

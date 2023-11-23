@@ -1,0 +1,14 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Event",
+  "@explicit": true,
+  "name": {},
+  "startDate": {},
+  "endDate": { "@omitDefault": true },
+  "location": {
+      "@explicit": true,
+      "name": {},
+      "@omitDefault": true
+  },
+  "url":{}
+}
