@@ -33,6 +33,21 @@
     },
     "url": {
       "@type": "@id"
+    },
+    "sameAs": {
+      "@type": "@id"
+    },
+    "streetAddress": {
+      "@container": "@language"
+    },
+    "addressCountry": {
+      "@container": "@language"
+    },
+    "addressRegion": {
+      "@container": "@language"
+    },
+    "addressLocality": {
+      "@container": "@language"
     }
   },
   "@graph":[]

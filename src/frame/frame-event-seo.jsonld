@@ -5,10 +5,37 @@
   "name": {},
   "startDate": {},
   "endDate": { "@omitDefault": true },
+  "sameAs": {},
   "location": {
+      "@type":"Place",
       "@explicit": true,
       "name": {},
-      "@omitDefault": true
+      "@omitDefault": true,
+      "address": {
+        "@type":"PostalAddress",
+        "@explicit": true,
+        "streetAddress": {},
+        "addressCountry": {},
+        "addressRegion": {},
+        "addressLocality": {},
+        "postalCode": {}
+      }
   },
-  "url":{}
+  "url":{},
+  "organizer": {
+    "@type": ["Organization","Person"],
+    "@explicit": true,
+    "@omitDefault": true,
+    "name": {},
+    "url":{},
+    "sameAs": {}
+  },
+  "performer": {
+    "@type": ["Organization","Person"],
+    "@explicit": true,
+    "@omitDefault": true,
+    "name": {},
+    "url":{},
+    "sameAs": {}
+  }
 }

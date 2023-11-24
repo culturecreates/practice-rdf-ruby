@@ -81,6 +81,7 @@
       ],
       "address": {
         "id": "64515ae5e19f7200646d07a7",
+        "type":"PostalAddress",
         "addressCountry": {
           "en": "CA",
           "fr": "CA"
@@ -175,7 +176,7 @@
         }
       ],
       "sameAs": [
-        "http://kg.artsdata.ca/resource/K16-67",
+        "K16-67",
         "http://scenepro.ca#Organization284"
       ],
       "url": "https://www.maisondelaculture.ca/",

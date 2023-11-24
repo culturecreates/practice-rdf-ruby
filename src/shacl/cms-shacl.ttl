@@ -13,16 +13,21 @@
 footlight:EventNode
   a sh:NodeShape ;
   sh:targetClass schema:Event ;
-  sh:property footlight:Event-name,
+  sh:closed true ;
+  sh:ignoredProperties (rdf:type) ;
+  sh:property footlight:Thing-name,
               footlight:Event-startDate,
               footlight:Event-endDate,
               footlight:Event-location, 
-              footlight:Event-url ;
+              footlight:Thing-url,
+              footlight:Thing-sameAs,
+              footlight:Event-organizer ;
 .
 
-footlight:Event-name
+footlight:Thing-name
     sh:path schema:name ;
     sh:uniqueLang true ;
+    sh:dataType rdf:langString ;
     sh:minCount 1 ;
 .
 
@@ -53,7 +58,8 @@ footlight:Event-eventStatus
                 schema:EventPostponed 
                 schema:EventScheduled  
                 schema:EventRescheduled  
-                schema:EventMovedOnline ) .
+                schema:EventMovedOnline ) ;
+.
 
 footlight:Event-location
     sh:path schema:location ;
@@ -61,26 +67,105 @@ footlight:Event-location
     sh:node footlight:PlaceNode ; 
 .
 
-footlight:Event-url
+
+footlight:Thing-url
     sh:path schema:url ;
     sh:nodeKind sh:IRI ;
     sh:minCount 0 ;
     sh:pattern "^http" ;
     sh:not (
         [sh:pattern "http://schema.org" ;]
-    ) .
+    ) ;
+.
+
+footlight:Thing-sameAs
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 0 ;
+    sh:pattern "^http" ;
+    sh:not (
+        [sh:pattern "http://schema.org" ;]
+    ) ;
+.
+
+footlight:Event-organizer
+    sh:path schema:organizer ;
+    sh:minCount 0  ;
+    sh:node footlight:OrganizationNode ; 
+.
+
+################
+# Organization 
+################
+footlight:OrganizationNode
+    sh:targetClass schema:Organization ;
+    sh:property footlight:Thing-name,
+                footlight:Thing-url,
+                footlight:Thing-sameAs ;
+.
+
+
+
 
 ################
 # Place 
 ################
 footlight:PlaceNode
     sh:targetClass schema:Place ;
-    sh:property footlight:Place-name ;
+    sh:property footlight:Thing-name ,
+                footlight:Place-address ;
 .
 
-footlight:Place-name
-    sh:path schema:name ;
-    sh:uniqueLang true ;
-    sh:minCount 1 ;
+footlight:Place-address
+    sh:path schema:address ;
+    sh:minCount 1  ;
+    sh:node footlight:PostalAddressNode ; 
 .
+
+################
+# PostalAddress  
+################
+footlight:PostalAddressNode
+    sh:targetClass schema:PostalAddress ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    sh:property footlight:PostalAddress-streetAddress, 
+                footlight:PostalAddress-addressCountry, 
+                footlight:PostalAddress-addressRegion, 
+                footlight:PostalAddress-postalCode, 
+                footlight:PostalAddress-addressLocality .
+    
+footlight:PostalAddress-streetAddress
+    sh:path schema:streetAddress ;
+    sh:minCount 1 ;
+    sh:uniqueLang true ;
+    sh:datatype rdf:langString ;
+.
+
+footlight:PostalAddress-addressCountry
+    sh:path schema:addressCountry ;
+    sh:minCount 1 ;
+    sh:uniqueLang true ;
+    sh:datatype rdf:langString ; 
+.
+
+ footlight:PostalAddress-addressRegion
+    sh:path schema:addressRegion ;
+    sh:minCount 1 ;
+    sh:uniqueLang true ;
+    sh:datatype rdf:langString ;
+.
+
+footlight:PostalAddress-postalCode
+    sh:path schema:postalCode ;
+    sh:minCount 1 ;
+    sh:datatype xsd:string .
+
+footlight:PostalAddress-addressLocality
+    sh:path schema:addressLocality ;
+    sh:minCount 1 ;
+    sh:uniqueLang true ;
+    sh:datatype rdf:langString ;
+.
+    
 
