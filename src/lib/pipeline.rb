@@ -36,6 +36,7 @@ class Pipeline
   def validate
     shacl = SHACL.open(@shacl)
     graph = RDF::Graph.load("../output/framed-#{@fixture.split('/').last}")
+    # graph = RDF::Graph.new.from_jsonld(@events_framed.to_json) 
     report = shacl.execute(graph)  
     puts "Conforms: #{report.conform?}"
     File.write("../output/report-#{@fixture.split('/').last}.yml", report)
